@@ -1,0 +1,202 @@
+.app{
+    background-color: rgb(3, 3, 72);
+    display: flex;
+    height:100vh;
+    color:rgb(255, 255, 255)
+}
+.main{
+    flex:3;
+    background: 
+    linear-gradient(to bottom, rgba(82, 82, 82, 0), #0f0240),
+  
+    url("./resource/mainbg.jpg") center;
+
+
+
+}
+
+.pyramid{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moneyList{
+    list-style: none;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    padding: 20px;
+}
+
+.moneyItem{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 2px;
+ 
+   
+}
+.moneyItem.active{
+   background-color: rgba(22, 158, 182, 0.635);
+  
+}
+
+.moneyItemNumber{
+    font-size: 18px;
+    font-weight: 100;
+    width: 35%;
+}
+
+.moneyItemAmount{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.earned{
+   
+    align-items: center;
+    justify-content: center;
+    padding: 25% 0% 15% 0%;
+    font-size: 3rem;
+    text-align: center;
+}
+.top{
+    height: 50%;
+    position: relative;
+}
+
+.timer{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: solid 3px;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+}
+
+
+.bottom{
+    height: 50%;
+}
+
+.qa{
+  
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.questions{
+    background:linear-gradient(rgb(33, 31, 77),rgb(1, 8, 33));
+    width: 70%;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    border:solid rgb(255, 255, 255);
+}
+
+.answers{
+    /* background-color: aliceblue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.answer{
+  
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    margin-left:1px ;
+    background:linear-gradient(rgb(0, 26, 102),rgb(21, 0, 0));
+    border: 1px solid ;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.answer:hover,
+.answer.active {
+    background: linear-gradient(rgb(106, 158, 161), rgb(9, 0, 137), rgba(5, 255, 247, 0.635));
+ 
+}
+.answer.correct{
+
+    
+    animation: correct 3s ease forwards;
+}
+.answer.wrong{
+  
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes correct{
+    8%,
+    24%,
+    40%
+ 
+    {
+        background: linear-gradient(rgb(255, 77, 0), rgb(255, 60, 0));
+    }
+    16%,
+    32%,
+    48%
+ 
+    
+    {
+        background:linear-gradient(rgb(0, 64, 255),rgb(51, 0, 255));
+    }
+   
+    50%,
+    100%
+ 
+    {
+        background:linear-gradient(rgb(55, 255, 0),rgb(0, 255, 0));
+        
+    }
+   
+
+} 
+
+
+@keyframes wrong{
+    8%,
+    24%,
+    40%
+ 
+    {
+        background: linear-gradient(rgb(255, 77, 0), rgb(255, 60, 0));
+    }
+    16%,
+    32%,
+    48%
+ 
+    
+    {
+        background:linear-gradient(rgb(0, 64, 255),rgb(51, 0, 255));
+    }
+   
+    50%,
+    100%
+ 
+    {
+        background:linear-gradient(rgb(255, 25, 0),rgb(255, 55, 0));
+        
+    }
+   
+
+}
