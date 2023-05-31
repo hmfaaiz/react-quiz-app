@@ -3,12 +3,12 @@
 export const quizData = [
     {
         id: 1,
-        questionIs: "What is the professional of Faaiz",
+        questionIs: "What is Faaiz's profession",
         answers: [
             { ans: "Doctor.", correct: false },
             { ans: "Software Engineer.", correct: true },
-            { ans: "Lawyer.", correct: false },
-            { ans: "Business amn", correct: false }]
+            { ans: "Lawyer", correct: false },
+            { ans: "Business man", correct: false }]
     },
     {
         id: 2,
